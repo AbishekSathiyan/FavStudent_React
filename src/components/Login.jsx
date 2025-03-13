@@ -38,36 +38,58 @@ const Auth = () => {
   };
 
   return (
-    <Container sx={{ mt: 4 }}>
-      <Typography variant="h4">{isRegistering ? "Register" : "Login"}</Typography>
-
-      <Box sx={{ display: "flex", flexDirection: "column", gap: 2, mt: 2 }}>
-        <TextField
-          label="Username"
-          variant="outlined"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-          fullWidth
-        />
-        <TextField
-          label="Password"
-          type="password"
-          variant="outlined"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          fullWidth
-        />
-        <Button variant="contained" color="primary" onClick={handleAuth}>
+    <Box
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        minHeight: "100vh",
+        bgcolor: "background.default",
+      }}
+    >
+      <Box
+        sx={{
+          p: 4,
+          border: "1px solid #ddd",
+          borderRadius: 2,
+          boxShadow: 3,
+          bgcolor: "white",
+          width: "100%",
+          maxWidth: 400,
+        }}
+      >
+        <Typography variant="h4" align="center" sx={{ mb: 3 }}>
           {isRegistering ? "Register" : "Login"}
-        </Button>
-        <Button
-          variant="text"
-          onClick={() => setIsRegistering(!isRegistering)}
-        >
-          {isRegistering ? "Already have an account? Login" : "New user? Register"}
-        </Button>
+        </Typography>
+
+        <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+          <TextField
+            label="Username"
+            variant="outlined"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            fullWidth
+          />
+          <TextField
+            label="Password"
+            type="password"
+            variant="outlined"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            fullWidth
+          />
+          <Button variant="contained" color="primary" onClick={handleAuth}>
+            {isRegistering ? "Register" : "Login"}
+          </Button>
+          <Button
+            variant="text"
+            onClick={() => setIsRegistering(!isRegistering)}
+          >
+            {isRegistering ? "Already have an account? Login" : "New user? Register"}
+          </Button>
+        </Box>
       </Box>
-    </Container>
+    </Box>
   );
 };
 
