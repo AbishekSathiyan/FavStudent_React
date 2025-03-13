@@ -1,13 +1,60 @@
-# React + Vite
+Here's an updated version of your **README.md** with the correct clone link for your project:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+```markdown
+# Favorite Student List App
 
-Currently, two official plugins are available:
+This is a simple **React** application where users can maintain a list of their favorite students. The app is built with React, and the primary features include user authentication, adding, viewing, and managing a list of students.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Demo
 
-## Expanding the ESLint configuration
+You can view the live app here: [Favorite Student List App](https://favoritestudentreact.vercel.app/)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-"# FavStudent_React" 
+## Features
+
+- **User Authentication**: Login functionality to access the student list.
+- **Student List**: Display a list of favorite students.
+- **Add Student**: Ability to add new students to the list.
+- **Edit/Delete**: Modify or remove students from the list.
+
+## Technologies Used
+
+- **React**: Frontend framework to build the user interface.
+- **Vite**: Next-gen frontend build tool for fast and optimized development.
+- **CSS**: For styling the app.
+
+## Setup
+
+1. Clone this repository to your local machine:
+   ```bash
+   git clone https://github.com/AbishekSathiyan/FavStudent_React.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd FavStudent_React
+   ```
+
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+   This will start the app on [http://localhost:3000](http://localhost:3000).
+
+## Pending Tasks
+
+- Final testing and bug fixes
+- Performance optimization
+- Deployment and hosting (currently hosted on Vercel)
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
+```
+
+Now the clone link is updated to your GitHub repository. Let me know if you need any further changes!
