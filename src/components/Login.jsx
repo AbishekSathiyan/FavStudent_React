@@ -1,7 +1,7 @@
 // src/components/Auth.jsx
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Container, TextField, Button, Typography, Box } from "@mui/material";
+import { TextField, Button, Typography, Box } from "@mui/material";
 
 const Auth = () => {
   const [isRegistering, setIsRegistering] = useState(false);
@@ -58,6 +58,10 @@ const Auth = () => {
           maxWidth: 400,
         }}
       >
+        <Typography variant="h4" align="center" sx={{ mb: 3 }}>
+          Welcome to Favorite Student App
+        </Typography>
+
         <Typography variant="h4" align="center" sx={{ mb: 3 }}>
           {isRegistering ? "Register" : "Login"}
         </Typography>
